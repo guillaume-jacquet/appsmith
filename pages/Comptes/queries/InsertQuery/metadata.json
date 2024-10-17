@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "670fdff8a34cc64c01137764_258bda19-7d65-45a2-aa0c-f7f8d5fb625f",
-  "id": "Ecritures_InsertQuery",
+  "gitSyncId": "6710199088e0b60dead92827_52223b20-fe9b-47e1-a878-9ed5f2f62499",
+  "id": "Comptes_InsertQuery",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
   "unpublishedAction": {
@@ -35,7 +35,7 @@
         },
         "sheetName": {
           "componentData": "template_table",
-          "data": "ecritures",
+          "data": "comptes",
           "viewType": "component"
         },
         "sheetUrl": {
@@ -52,11 +52,6 @@
           "componentData": "1",
           "data": "1",
           "viewType": "component"
-        },
-        "where": {
-          "data": {
-            "condition": "AND"
-          }
         }
       },
       "paginationType": "NONE",
@@ -91,7 +86,7 @@
         },
         {
           "key": "sheetName",
-          "value": "ecritures"
+          "value": "comptes"
         },
         {
           "key": "rowOffset",
@@ -126,10 +121,9 @@
       "name": "budget",
       "pluginId": "google-sheets-plugin"
     },
-    "dynamicBindingPathList": [],
     "executeOnLoad": false,
     "name": "InsertQuery",
-    "pageId": "Ecritures",
+    "pageId": "Comptes",
     "userSetOnLoad": false
   }
 }

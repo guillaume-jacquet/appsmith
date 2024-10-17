@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "670fdff8a34cc64c01137764_177a8a3c-2862-4434-a80e-e13db450b88b",
-  "id": "Page1_Total_record_comptes1",
+  "gitSyncId": "6710199088e0b60dead92827_6bd989cb-635f-426b-b997-e3c5a61f3b9a",
+  "id": "Page1_Update_periodes1",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
   "unpublishedAction": {
@@ -8,7 +8,7 @@
       "encodeParamsToggle": true,
       "formData": {
         "command": {
-          "data": "FETCH_MANY"
+          "data": "UPDATE_ONE"
         },
         "entityType": {
           "data": "ROWS"
@@ -28,8 +28,11 @@
         "range": {
           "data": ""
         },
+        "rowObjects": {
+          "data": "{{Table2.updatedRow}}"
+        },
         "sheetName": {
-          "data": "comptes"
+          "data": "periodes"
         },
         "sheetUrl": {
           "data": "https://docs.google.com/spreadsheets/d/1Dp389GZ79dJeFKp7R5NCCpfPWfZ0AP075_uqQyRwwSg/edit"
@@ -42,13 +45,6 @@
         },
         "where": {
           "data": {
-            "children": [
-              {
-                "condition": "CONTAINS",
-                "key": "{{Table1.searchText ? \"Compte\" : \"\"}}",
-                "value": "{{Table1.searchText}}"
-              }
-            ],
             "condition": "AND"
           }
         }
@@ -65,11 +61,11 @@
     },
     "dynamicBindingPathList": [
       {
-        "key": "formData.where.data"
+        "key": "formData.rowObjects.data"
       }
     ],
     "executeOnLoad": false,
-    "name": "Total_record_comptes1",
+    "name": "Update_periodes1",
     "pageId": "Page1",
     "userSetOnLoad": false
   }

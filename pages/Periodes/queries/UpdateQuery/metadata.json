@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "670fdff8a34cc64c01137764_258bda19-7d65-45a2-aa0c-f7f8d5fb625f",
-  "id": "Ecritures_InsertQuery",
+  "gitSyncId": "6710199088e0b60dead92827_a3f13f5d-dc22-467b-b1ef-3b0d3b22636c",
+  "id": "Periodes_UpdateQuery",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
   "unpublishedAction": {
@@ -8,8 +8,8 @@
       "encodeParamsToggle": true,
       "formData": {
         "command": {
-          "componentData": "INSERT_ONE",
-          "data": "INSERT_ONE",
+          "componentData": "UPDATE_ONE",
+          "data": "UPDATE_ONE",
           "viewType": "component"
         },
         "entityType": {
@@ -25,17 +25,14 @@
           "data": "ROWS",
           "viewType": "component"
         },
-        "range": {
-          "data": ""
-        },
         "rowObjects": {
-          "componentData": "{{insert_form.formData}}",
-          "data": "{{insert_form.formData}}",
+          "componentData": "{{\n\t{\n\t\t...update_form.formData, \n\t\trowIndex:data_table.selectedRow.rowIndex\n\t}\n}}",
+          "data": "{{\n\t{\n\t\t...update_form.formData, \n\t\trowIndex:data_table.selectedRow.rowIndex\n\t}\n}}",
           "viewType": "component"
         },
         "sheetName": {
           "componentData": "template_table",
-          "data": "ecritures",
+          "data": "periodes",
           "viewType": "component"
         },
         "sheetUrl": {
@@ -52,18 +49,13 @@
           "componentData": "1",
           "data": "1",
           "viewType": "component"
-        },
-        "where": {
-          "data": {
-            "condition": "AND"
-          }
         }
       },
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
           "key": "method",
-          "value": "APPEND"
+          "value": "UPDATE"
         },
         {
           "key": "sheetUrl",
@@ -91,7 +83,7 @@
         },
         {
           "key": "sheetName",
-          "value": "ecritures"
+          "value": "periodes"
         },
         {
           "key": "rowOffset",
@@ -99,7 +91,7 @@
         },
         {
           "key": "rowObject",
-          "value": "{{insert_form.formData}}"
+          "value": "{{\n\t{\n\t\t...update_form.formData, \n\t\trowIndex:data_table.selectedRow.rowIndex\n\t}\n}}"
         },
         {
           "key": "rowObjects"
@@ -126,10 +118,9 @@
       "name": "budget",
       "pluginId": "google-sheets-plugin"
     },
-    "dynamicBindingPathList": [],
     "executeOnLoad": false,
-    "name": "InsertQuery",
-    "pageId": "Ecritures",
+    "name": "UpdateQuery",
+    "pageId": "Periodes",
     "userSetOnLoad": false
   }
 }

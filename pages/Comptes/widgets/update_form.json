@@ -124,67 +124,22 @@
       "key": "borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.Label.defaultValue"
+      "key": "schema.__root_schema__.children.Compte.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.Label.borderRadius"
+      "key": "schema.__root_schema__.children.Compte.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.Label.accentColor"
+      "key": "schema.__root_schema__.children.Compte.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.xn__Priode_bva.defaultValue"
+      "key": "schema.__root_schema__.children.Type.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.xn__Priode_bva.borderRadius"
+      "key": "schema.__root_schema__.children.Type.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.xn__Priode_bva.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.xn__Libll_dsac.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.xn__Libll_dsac.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.xn__Libll_dsac.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.xn__Compte_Dbit_ibbd.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.xn__Compte_Dbit_ibbd.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.xn__Compte_Dbit_ibbd.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.xn__Compte_Crdit_jebd.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.xn__Compte_Crdit_jebd.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.xn__Compte_Crdit_jebd.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.Montant.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.Montant.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.Montant.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.Statut.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.Statut.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.Statut.accentColor"
+      "key": "schema.__root_schema__.children.Type.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -242,159 +197,49 @@
       "cellBorderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
       "cellBoxShadow": "none",
       "children": {
-        "Label": {
+        "Compte": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "Label",
+          "accessor": "Compte",
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Label))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Compte))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
-          "identifier": "Label",
+          "identifier": "Compte",
           "isCustomField": false,
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
-          "label": "Label",
+          "label": "Compte",
           "labelTextSize": "0.875rem",
-          "originalIdentifier": "Label",
+          "originalIdentifier": "Compte",
           "position": 0,
-          "sourceData": "Solde_fin_de_mois-Septembre-2024"
-        },
-        "Montant": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "Montant",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Montant))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "Montant",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Montant",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "Montant",
-          "position": 5,
-          "sourceData": ""
-        },
-        "Statut": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "Statut",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Statut))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "Statut",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Statut",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "Statut",
-          "position": 6,
-          "sourceData": "Validé"
-        },
-        "xn__Compte_Crdit_jebd": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "Compte Crédité",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"Compte Crédité\"]))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "xn__Compte_Crdit_jebd",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Compte Credite",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "Compte Crédité",
-          "position": 4,
           "sourceData": "Perso"
         },
-        "xn__Compte_Dbit_ibbd": {
+        "Type": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "Compte Débité",
+          "accessor": "Type",
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"Compte Débité\"]))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Type))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
-          "identifier": "xn__Compte_Dbit_ibbd",
+          "identifier": "Type",
           "isCustomField": false,
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
-          "label": "Compte Debite",
+          "label": "Type",
           "labelTextSize": "0.875rem",
-          "originalIdentifier": "Compte Débité",
-          "position": 3,
-          "sourceData": ""
-        },
-        "xn__Libll_dsac": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "Libéllé",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"Libéllé\"]))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "xn__Libll_dsac",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Libelle",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "Libéllé",
-          "position": 2,
-          "sourceData": "Solde fin de mois"
-        },
-        "xn__Priode_bva": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "Période",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"Période\"]))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "xn__Priode_bva",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Periode",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "Période",
+          "originalIdentifier": "Type",
           "position": 1,
-          "sourceData": "septembre 2024"
+          "sourceData": "Courant"
         }
       },
       "dataType": "object",

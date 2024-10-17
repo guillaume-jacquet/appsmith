@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "670fdff8a34cc64c01137764_258bda19-7d65-45a2-aa0c-f7f8d5fb625f",
-  "id": "Ecritures_InsertQuery",
+  "gitSyncId": "6710199088e0b60dead92827_57164248-14ee-457b-aa58-92c335ebfb17",
+  "id": "Comptes_SelectQuery",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
   "unpublishedAction": {
@@ -8,13 +8,24 @@
       "encodeParamsToggle": true,
       "formData": {
         "command": {
-          "componentData": "INSERT_ONE",
-          "data": "INSERT_ONE",
+          "componentData": "FETCH_MANY",
+          "data": "FETCH_MANY",
           "viewType": "component"
         },
         "entityType": {
           "componentData": "ROWS",
           "data": "ROWS",
+          "viewType": "component"
+        },
+        "pagination": {
+          "componentData": {
+            "limit": "{{data_table.pageSize}}",
+            "offset": "{{(data_table.pageNo - 1) * data_table.pageSize}}"
+          },
+          "data": {
+            "limit": "{{data_table.pageSize}}",
+            "offset": "{{(data_table.pageNo - 1) * data_table.pageSize}}"
+          },
           "viewType": "component"
         },
         "projection": {
@@ -28,14 +39,9 @@
         "range": {
           "data": ""
         },
-        "rowObjects": {
-          "componentData": "{{insert_form.formData}}",
-          "data": "{{insert_form.formData}}",
-          "viewType": "component"
-        },
         "sheetName": {
           "componentData": "template_table",
-          "data": "ecritures",
+          "data": "comptes",
           "viewType": "component"
         },
         "sheetUrl": {
@@ -44,9 +50,17 @@
           "viewType": "component"
         },
         "smartSubstitution": {
-          "componentData": true,
-          "data": true,
+          "componentData": false,
+          "data": false,
           "viewType": "component"
+        },
+        "sortBy": {
+          "data": [
+            {
+              "column": "",
+              "order": "Ascending"
+            }
+          ]
         },
         "tableHeaderIndex": {
           "componentData": "1",
@@ -54,16 +68,26 @@
           "viewType": "component"
         },
         "where": {
-          "data": {
+          "componentData": {
+            "children": [
+              {}
+            ],
             "condition": "AND"
-          }
+          },
+          "data": {
+            "children": [
+              {}
+            ],
+            "condition": "AND"
+          },
+          "viewType": "component"
         }
       },
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
           "key": "method",
-          "value": "APPEND"
+          "value": "GET"
         },
         {
           "key": "sheetUrl",
@@ -87,19 +111,18 @@
         },
         {
           "key": "rowLimit",
-          "value": ""
+          "value": "{{data_table.pageSize}}"
         },
         {
           "key": "sheetName",
-          "value": "ecritures"
+          "value": "comptes"
         },
         {
           "key": "rowOffset",
-          "value": ""
+          "value": "{{(data_table.pageNo - 1) * data_table.pageSize}}"
         },
         {
-          "key": "rowObject",
-          "value": "{{insert_form.formData}}"
+          "key": "rowObject"
         },
         {
           "key": "rowObjects"
@@ -114,7 +137,13 @@
         },
         {
           "key": "smartSubstitution",
-          "value": true
+          "value": false
+        },
+        {
+          "key": "where",
+          "value": [
+            {}
+          ]
         }
       ],
       "timeoutInMillisecond": 10000
@@ -126,10 +155,9 @@
       "name": "budget",
       "pluginId": "google-sheets-plugin"
     },
-    "dynamicBindingPathList": [],
-    "executeOnLoad": false,
-    "name": "InsertQuery",
-    "pageId": "Ecritures",
-    "userSetOnLoad": false
+    "executeOnLoad": true,
+    "name": "SelectQuery",
+    "pageId": "Comptes",
+    "userSetOnLoad": true
   }
 }

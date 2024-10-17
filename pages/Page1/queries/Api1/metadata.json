@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "670fdff8a34cc64c01137764_177a8a3c-2862-4434-a80e-e13db450b88b",
-  "id": "Page1_Total_record_comptes1",
+  "gitSyncId": "6710199088e0b60dead92827_b2aa2baf-d9fd-4dbd-be4f-30a57bacb3ca",
+  "id": "Page1_Api1",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
   "unpublishedAction": {
@@ -29,13 +29,21 @@
           "data": ""
         },
         "sheetName": {
-          "data": "comptes"
+          "data": "ecritures"
         },
         "sheetUrl": {
           "data": "https://docs.google.com/spreadsheets/d/1Dp389GZ79dJeFKp7R5NCCpfPWfZ0AP075_uqQyRwwSg/edit"
         },
         "smartSubstitution": {
           "data": true
+        },
+        "sortBy": {
+          "data": [
+            {
+              "column": "",
+              "order": "Ascending"
+            }
+          ]
         },
         "tableHeaderIndex": {
           "data": "1"
@@ -44,9 +52,8 @@
           "data": {
             "children": [
               {
-                "condition": "CONTAINS",
-                "key": "{{Table1.searchText ? \"Compte\" : \"\"}}",
-                "value": "{{Table1.searchText}}"
+                "condition": "LT",
+                "value": ""
               }
             ],
             "condition": "AND"
@@ -63,13 +70,9 @@
       "name": "budget",
       "pluginId": "google-sheets-plugin"
     },
-    "dynamicBindingPathList": [
-      {
-        "key": "formData.where.data"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "executeOnLoad": false,
-    "name": "Total_record_comptes1",
+    "name": "Api1",
     "pageId": "Page1",
     "userSetOnLoad": false
   }

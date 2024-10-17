@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "670fdff8a34cc64c01137764_bce53a1f-15ca-4a27-919f-f5cfc501bace",
-  "id": "Page1_Find_ecritures1",
+  "gitSyncId": "6710199088e0b60dead92827_58049c23-af3c-4792-be2e-0258480e9557",
+  "id": "Page1_Find_periodes1",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
   "unpublishedAction": {
@@ -29,7 +29,7 @@
           "data": ""
         },
         "sheetName": {
-          "data": "ecritures"
+          "data": "periodes"
         },
         "sheetUrl": {
           "data": "https://docs.google.com/spreadsheets/d/1Dp389GZ79dJeFKp7R5NCCpfPWfZ0AP075_uqQyRwwSg/edit"
@@ -52,24 +52,7 @@
           "data": {
             "children": [
               {
-                "condition": "CONTAINS",
-                "key": "{{Select2.selectedOptionValue ? \"Période\" : \"\"}}",
-                "value": "{{Select2.selectedOptionValue ? Select2.selectedOptionValue : \"*\"}}"
-              },
-              {
-                "children": [
-                  {
-                    "condition": "EQ",
-                    "key": "{{Select1.selectedOptionValue ? \"Compte Débité\" : \"\"}}",
-                    "value": "{{Select1.selectedOptionValue}}"
-                  },
-                  {
-                    "condition": "EQ",
-                    "key": "{{Select1.selectedOptionValue ? \"Compte Crédité\" : \"\"}}",
-                    "value": "{{Select1.selectedOptionValue}}"
-                  }
-                ],
-                "condition": "OR"
+                "condition": "LT"
               }
             ],
             "condition": "AND"
@@ -92,28 +75,10 @@
       },
       {
         "key": "formData.pagination.data"
-      },
-      {
-        "key": "formData.where.data.children[0].key"
-      },
-      {
-        "key": "formData.where.data.children[0].value"
-      },
-      {
-        "key": "formData.where.data.children[1].children[0].key"
-      },
-      {
-        "key": "formData.where.data.children[1].children[0].value"
-      },
-      {
-        "key": "formData.where.data.children[1].children[1].key"
-      },
-      {
-        "key": "formData.where.data.children[1].children[1].value"
       }
     ],
     "executeOnLoad": true,
-    "name": "Find_ecritures1",
+    "name": "Find_periodes1",
     "pageId": "Page1",
     "userSetOnLoad": false
   }

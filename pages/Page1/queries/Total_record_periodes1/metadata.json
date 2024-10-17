@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "670fdff8a34cc64c01137764_177a8a3c-2862-4434-a80e-e13db450b88b",
-  "id": "Page1_Total_record_comptes1",
+  "gitSyncId": "6710199088e0b60dead92827_17542c5f-0944-4ddf-8e1c-0aa0b6640f41",
+  "id": "Page1_Total_record_periodes1",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
   "unpublishedAction": {
@@ -29,7 +29,7 @@
           "data": ""
         },
         "sheetName": {
-          "data": "comptes"
+          "data": "periodes"
         },
         "sheetUrl": {
           "data": "https://docs.google.com/spreadsheets/d/1Dp389GZ79dJeFKp7R5NCCpfPWfZ0AP075_uqQyRwwSg/edit"
@@ -45,8 +45,8 @@
             "children": [
               {
                 "condition": "CONTAINS",
-                "key": "{{Table1.searchText ? \"Compte\" : \"\"}}",
-                "value": "{{Table1.searchText}}"
+                "key": "{{Table2.searchText ? \"undefined\" : \"\"}}",
+                "value": "{{Table2.searchText}}"
               }
             ],
             "condition": "AND"
@@ -69,7 +69,7 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "Total_record_comptes1",
+    "name": "Total_record_periodes1",
     "pageId": "Page1",
     "userSetOnLoad": false
   }

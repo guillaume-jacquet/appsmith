@@ -1,23 +1,23 @@
 {
-  "gitSyncId": "670fdff8a34cc64c01137764_c6efadcd-6295-4c95-b1e0-f28ac96d1bd4",
+  "gitSyncId": "6710199088e0b60dead92827_67e9eed8-c2f8-4077-8d84-babaa4cb5c47",
   "unpublishedPage": {
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 720,
+          "bottomRow": 870,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
           "dynamicBindingPathList": [],
           "dynamicTriggerPathList": [],
           "leftColumn": 0,
-          "minHeight": 1292,
+          "minHeight": 890,
           "parentColumnSpace": 1,
           "parentRowSpace": 1,
-          "rightColumn": 4896,
+          "rightColumn": 1174,
           "snapColumns": 64,
-          "snapRows": 124,
+          "snapRows": 125,
           "topRow": 0,
           "type": "CANVAS_WIDGET",
           "version": 90,
@@ -26,7 +26,7 @@
         }
       }
     ],
-    "name": "Page1",
-    "slug": "page1"
+    "name": "Periodes",
+    "slug": "periodes"
   }
 }
